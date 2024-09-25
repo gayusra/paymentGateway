@@ -1,21 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Checkout</h1>
-    <form action="/checkout" method="POST">
-        <label for="phone-quantity">Phone Quantity:</label>
-        <input type="number" id="phone-quantity" name="phoneQuantity" value="1" min="1"><br>
+    
+    <!-- Product 1: Smart Phone -->
+    <div class="img_content">
+        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=UXp1U3VDY3IyR1hNdHZwdFdOLzg1V0tFK1lhSCtYSGRqMUdhR284NTN4OUtONFJuV1pCdWVXaWp6ZXpQQi9FWXF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGZqTWwxUjR3emtKcFNGYngyU0EvOWU=&traceId=1" alt="Smart Phone" class="img1">
+        <form action="/checkout" method="POST">
+            <label for="phone-quantity">Phone Quantity:</label>
+            <input type="number" id="phone-quantity" name="phoneQuantity" value="1" min="1"><br>
+            <button type="submit">Buy Now</button>
+        </form>
+    </div>
 
-        <label for="watch-quantity">Watch Quantity:</label>
-        <input type="number" id="watch-quantity" name="watchQuantity" value="1" min="1"><br>
+    <!-- Product 2: Smart Watch -->
+    <div class="img_content">
+        <img src="https://i5.walmartimages.com/asr/2c1c2ccc-39a1-4aec-9430-5d1d934eb465.c315ee059f382bc635a801d8a5cb4325.jpeg" alt="Smart Watch" class="img2">
+        <form action="/checkout" method="POST">
+            <label for="watch-quantity">Watch Quantity:</label>
+            <input type="number" id="watch-quantity" name="watchQuantity" value="1" min="1"><br>
+            <button type="submit">Buy Now</button>
+        </form>
+    </div>
 
-        <button type="submit">Checkout</button>
-    </form>
+    <!-- Product 3: Example Product -->
+    <div class="img_content">
+        <img src="https://m.media-amazon.com/images/I/61OneI4LZ3L._SX679_.jpg" alt="Example Product" class="img3">
+        <form action="/checkout" method="POST">
+            <label for="bag-quantity">Office Bag :</label>
+            <input type="number" id="bag-quantity" name="bagQuantity" value="1" min="1"><br>
+            <button type="submit">Buy Now</button>
+        </form>
+    </div>
+
 </body>
 </html>
